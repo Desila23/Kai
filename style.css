@@ -23,7 +23,7 @@ body {
 
 .message {
   position: absolute; /* Posiziona il testo in modo assoluto */
-  top: 10px; /* Distanza dal bordo superiore */
+  top: 25%; /* Distanza dal bordo superiore */
   left: 50%;
   transform: translateX(-50%);
   font-size: 2em; /* Dimensione del carattere */
