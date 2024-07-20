@@ -11,15 +11,33 @@
 }
 
 body {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  display: flex; /* Imposta il body come contenitore flex */
+  align-items: center; /* Centra i fiori orizzontalmente */
+  justify-content: center; /* Centra i fiori verticalmente */
   min-height: 100vh;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
-  padding: 50px 0px;
+  padding: 0; /* Rimuovi il padding */
 }
+
+.message {
+  position: absolute; /* Posiziona il testo in modo assoluto */
+  top: 10px; /* Distanza dal bordo superiore */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em; /* Dimensione del carattere */
+  color: #90EE90;       /* Verde chiaro */
+  font-family: sans-serif; /* Tipo di carattere */
+  z-index: 100; /* Assicurati che il testo sia sopra gli altri elementi */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Aggiungi un'ombra al testo */
+  font-style: italic; /* Rende il testo corsivo */
+  font-weight: normal; /* Rende il testo in grassetto */
+  letter-spacing: 2px; /* Spaziatura tra le lettere */
+  text-transform: uppercase; /* Trasforma il testo in maiuscolo */
+  animation: glow 2s ease-in-out infinite alternate; /* Aggiunge un effetto di bagliore */
+}
+
 
 .night {
   position: fixed;
